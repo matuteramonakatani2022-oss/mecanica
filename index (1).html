@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REDLINE GARAGE — Especialistas en Tuning JDM</title>
+<meta name="description" content="Taller especializado en tuning y preparación de vehículos japoneses JDM: motores, ECU, suspensión, escapes, frenos y detailing.">
+
+<!-- Tipografías: una condensada de impacto para títulos (estilo tablero/tacómetro) y una neutra para texto -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ BOTÓN SALTAR AL CONTENIDO (accesibilidad) ============ -->
+<a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="#inicio" class="logo">
+      <span class="logo-mark"><span>R</span></span>
+      <span class="logo-text">REDLINE<em>GARAGE</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#galeria" class="nav-link">Galería</a></li>
+        <li><a href="#marcas" class="nav-link">Marcas</a></li>
+        <li><a href="#opiniones" class="nav-link">Opiniones</a></li>
+        <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-tools">
+      <!-- Interruptor de modo oscuro / claro -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo de color" title="Cambiar tema">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 4.5a1 1 0 011-1h0a1 1 0 011 1V6a1 1 0 01-1 1h0a1 1 0 01-1-1V4.5zm0 14a1 1 0 011-1h0a1 1 0 011 1V19a1 1 0 01-1 1h0a1 1 0 01-1-1v-1.5zM4.5 11a1 1 0 011 1v0a1 1 0 01-1 1H3a1 1 0 01-1-1v0a1 1 0 011-1h1.5zm14 0a1 1 0 011 1v0a1 1 0 01-1 1H19a1 1 0 01-1-1v0a1 1 0 011-1h1.5zM6.34 6.34a1 1 0 011.42 0v0a1 1 0 010 1.42l-.71.7a1 1 0 01-1.42 0v0a1 1 0 010-1.41l.71-.71zm10.6 10.6a1 1 0 011.42 0v0a1 1 0 010 1.42l-.71.7a1 1 0 01-1.41 0v0a1 1 0 010-1.41l.7-.71zM17.66 6.34a1 1 0 010 1.42l-.7.7a1 1 0 01-1.42 0v0a1 1 0 010-1.42l.71-.7a1 1 0 011.41 0zM7.05 16.95a1 1 0 010 1.41l-.71.71a1 1 0 01-1.41 0v0a1 1 0 010-1.42l.7-.7a1 1 0 011.42 0zM12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+      </button>
+
+      <!-- Botón hamburguesa (móvil) -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1605559911160-a3d95d213904?q=80&w=1740&auto=format&fit=crop');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-stripes" aria-hidden="true"></div>
+    <!-- Bandera del sol naciente, motivo clásico de la estética JDM -->
+    <div class="hero-flag" aria-hidden="true"></div>
+
+    <div class="hero-content reveal">
+      <p class="eyebrow">Taller especializado · Tuning &amp; Performance</p>
+      <h1 class="hero-title">REDLINE <span>GARAGE</span></h1>
+      <p class="hero-slogan">Fieles a la mecánica japonesa. Precisión de fábrica, alma de circuito.</p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn btn-primary">Solicitar presupuesto</a>
+        <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+      </div>
+    </div>
+
+    <!-- Tacómetro decorativo: elemento distintivo de marca -->
+    <svg class="hero-gauge" viewBox="0 0 200 200" aria-hidden="true">
+      <circle cx="100" cy="100" r="92" class="gauge-ring"></circle>
+      <g class="gauge-ticks"></g>
+      <line x1="100" y1="100" x2="100" y2="30" class="gauge-needle"></line>
+      <circle cx="100" cy="100" r="6" class="gauge-hub"></circle>
+      <text x="100" y="140" class="gauge-label">x1000 RPM</text>
+    </svg>
+
+    <a href="#nosotros" class="scroll-cue" aria-label="Bajar">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ SOBRE NOSOTROS ============ -->
+  <section class="section about" id="nosotros">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <p class="section-tag">01 — Quiénes somos</p>
+        <h2 class="section-title">Especialistas en autos japoneses, sin atajos</h2>
+        <p>En <strong>Redline Garage</strong> vivimos la cultura JDM desde hace más de 15 años. Trabajamos exclusivamente con vehículos de marcas japonesas — Toyota, Nissan, Honda, Subaru, Mazda, Mitsubishi y Suzuki — porque conocer a fondo un solo universo mecánico es lo que nos permite hacerlo bien.</p>
+        <p>Combinamos herramientas de diagnóstico originales, bancos de potencia propios y un equipo de técnicos formados en preparación de motores y reprogramación ECU, para que cada auto que sale del taller rinda como fue pensado para hacerlo: al límite, con control total.</p>
+        <ul class="about-stats">
+          <li><span class="stat-num">15+</span><span class="stat-label">Años de experiencia</span></li>
+          <li><span class="stat-num">1200+</span><span class="stat-label">Vehículos intervenidos</span></li>
+          <li><span class="stat-num">98%</span><span class="stat-label">Clientes que vuelven</span></li>
+        </ul>
+      </div>
+      <div class="about-media reveal">
+        <img src="https://images.unsplash.com/photo-1611016186353-9af58c69a533?q=80&w=1200&auto=format&fit=crop" alt="Mecánico trabajando en el motor de un auto japonés en el taller">
+        <div class="about-media-badge">
+          <span>Bancos de potencia</span>
+          <strong>Diagnóstico propio en sitio</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="section services" id="servicios">
+    <div class="container">
+      <p class="section-tag centered">02 — Lo que hacemos</p>
+      <h2 class="section-title centered">Servicios de taller y tuning</h2>
+      <p class="section-sub centered">Del mantenimiento de rutina a la preparación completa para circuito.</p>
+
+      <div class="services-grid">
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M4 15V9a1 1 0 011-1h2l2-3h6l1 3h2a1 1 0 011 1v6M4 15h16M4 15v3a1 1 0 001 1h1a1 1 0 001-1v-1h10v1a1 1 0 001 1h1a1 1 0 001-1v-3M7 12h2m6 0h2"/></svg>
+          </div>
+          <h3>Preparación de motores</h3>
+          <p>Aumento de potencia, forjados, turbo upgrade y puesta a punto para uso en calle o circuito.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+          </div>
+          <h3>Reprogramación ECU</h3>
+          <p>Mapeo personalizado, stage 1/2/3 y ajuste fino de la centralita para cada configuración.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M6 20V10m0 0a3 3 0 106 0 3 3 0 00-6 0zm12 10V4m0 0a3 3 0 106 0m-9 6h6"/></svg>
+          </div>
+          <h3>Suspensión</h3>
+          <p>Coilovers, barras estabilizadoras y geometría para touge, drift o pista.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M3 12h8m0 0l3-3m-3 3l3 3m5-3h3M14 6c2 2 2 10 0 12"/></svg>
+          </div>
+          <h3>Escapes</h3>
+          <p>Líneas cat-back, headers y sistemas a medida buscando el sonido y flujo correctos.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="2.4" fill="currentColor"/><path stroke="currentColor" stroke-width="1.6" d="M12 4v2M12 18v2M4 12h2M18 12h2"/></svg>
+          </div>
+          <h3>Frenos</h3>
+          <p>Discos ventilados, pastillas de alto rendimiento y kits big brake.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M14.7 6.3l3 3-8.4 8.4-3.7.7.7-3.7 8.4-8.4z"/></svg>
+          </div>
+          <h3>Mantenimiento</h3>
+          <p>Servicios programados, aceites y filtros específicos para motores japoneses.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M4 4l16 16M4 10l6 6M14 4l6 6M8 16l-3 3M16 8l3-3"/></svg>
+          </div>
+          <h3>Detailing</h3>
+          <p>Pulido, protección cerámica y restauración estética interior y exterior.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path stroke="currentColor" stroke-width="1.6" d="M8 8h8M8 12h8M8 16h5"/></svg>
+          </div>
+          <h3>Diagnóstico electrónico</h3>
+          <p>Escaneo OBD avanzado, detección de fallas y verificación pre y post intervención.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section class="section gallery" id="galeria">
+    <div class="container">
+      <p class="section-tag centered">03 — Trabajos realizados</p>
+      <h2 class="section-title centered">Galería JDM</h2>
+      <p class="section-sub centered">Una muestra de los vehículos que pasaron por el taller.</p>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?q=80&w=800&auto=format&fit=crop" alt="Nissan Skyline GT-R preparado, vista lateral">
+          <figcaption><strong>Nissan Skyline GT-R R34</strong><span>Stage 2 — Reprogramación ECU</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1580414155951-e13c9c3e2fef?q=80&w=800&auto=format&fit=crop" alt="Toyota Supra con kit de suspensión coilover">
+          <figcaption><strong>Toyota Supra A80</strong><span>Suspensión coilover</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1583267575467-2a92a30adbe3?q=80&w=800&auto=format&fit=crop" alt="Honda Civic Type R en el taller">
+          <figcaption><strong>Honda Civic Type R</strong><span>Puesta a punto</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?q=80&w=800&auto=format&fit=crop" alt="Subaru Impreza WRX STI de rally">
+          <figcaption><strong>Subaru Impreza WRX STI</strong><span>Rally spec</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1601929831382-05ab53d1b9ac?q=80&w=800&auto=format&fit=crop" alt="Mazda RX-7 preparado para drift">
+          <figcaption><strong>Mazda RX-7 FD3S</strong><span>Setup de drift</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=800&auto=format&fit=crop" alt="Mitsubishi Lancer Evolution con escape deportivo">
+          <figcaption><strong>Mitsubishi Lancer Evo IX</strong><span>Línea de escape</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1617814076231-407057a58acb?q=80&w=800&auto=format&fit=crop" alt="Suzuki Swift Sport preparado">
+          <figcaption><strong>Suzuki Swift Sport</strong><span>Mantenimiento y detailing</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1621007680477-3c1a1a3b8b57?q=80&w=800&auto=format&fit=crop" alt="Lexus IS300 preparado, vista frontal">
+          <figcaption><strong>Lexus IS300</strong><span>Frenos big brake kit</span></figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?q=80&w=800&auto=format&fit=crop" alt="Toyota AE86 Trueno estilo touge">
+          <figcaption><strong>Toyota AE86 Trueno</strong><span>Restauración y suspensión</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARCAS ============ -->
+  <section class="section brands" id="marcas">
+    <div class="container">
+      <p class="section-tag centered">04 — Con quién trabajamos</p>
+      <h2 class="section-title centered">Marcas japonesas</h2>
+
+      <div class="brands-grid">
+        <div class="brand-plate reveal"><span>TOYOTA</span></div>
+        <div class="brand-plate reveal"><span>NISSAN</span></div>
+        <div class="brand-plate reveal"><span>HONDA</span></div>
+        <div class="brand-plate reveal"><span>SUBARU</span></div>
+        <div class="brand-plate reveal"><span>MAZDA</span></div>
+        <div class="brand-plate reveal"><span>MITSUBISHI</span></div>
+        <div class="brand-plate reveal"><span>SUZUKI</span></div>
+        <div class="brand-plate reveal"><span>LEXUS</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OPINIONES ============ -->
+  <section class="section testimonials" id="opiniones">
+    <div class="container">
+      <p class="section-tag centered">05 — Opiniones</p>
+      <h2 class="section-title centered">Lo que dicen nuestros clientes</h2>
+
+      <div class="testimonials-grid">
+        <blockquote class="testimonial-card reveal">
+          <p>"Le hicieron stage 2 a mi Silvia y quedó irreconocible. Explicaron cada paso del mapeo de la ECU antes de tocar nada."</p>
+          <footer><strong>Martín D.</strong><span>Nissan Silvia S15</span></footer>
+        </blockquote>
+        <blockquote class="testimonial-card reveal">
+          <p>"Cambio de coilovers y alineación de geometría perfectos. Se nota que solo trabajan con autos japoneses, conocen cada detalle."</p>
+          <footer><strong>Julieta R.</strong><span>Subaru Impreza WRX</span></footer>
+        </blockquote>
+        <blockquote class="testimonial-card reveal">
+          <p>"Diagnóstico electrónico rápido y honesto. Me dijeron exactamente qué necesitaba y qué podía esperar. Volví dos veces más."</p>
+          <footer><strong>Federico A.</strong><span>Honda Civic Type R</span></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section contact" id="contacto">
+    <div class="container contact-grid">
+
+      <div class="contact-form-wrap reveal">
+        <p class="section-tag">06 — Contacto</p>
+        <h2 class="section-title">Solicitá tu presupuesto</h2>
+        <p class="section-sub">Contanos sobre tu auto y qué estás buscando. Te respondemos a la brevedad.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre">
+            <span class="error-msg" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com">
+            <span class="error-msg" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="+54 9 261 000 0000">
+            <span class="error-msg" id="phoneError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" placeholder="Contanos sobre tu vehículo y qué necesitás..."></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Enviar solicitud</button>
+          <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="contact-info reveal">
+        <div class="map-placeholder" role="img" aria-label="Mapa de ubicación del taller">
+          <div class="map-grid"></div>
+          <svg class="map-pin" viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>
+          <span class="map-label">Parque Industrial, San Martín, Mendoza</span>
+        </div>
+
+        <ul class="contact-details">
+          <li>
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11 11 0 003.5.56 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11 11 0 00.56 3.5 1 1 0 01-.25 1z"/></svg>
+            <span>+54 261 000-0000</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1zm2.4 2L12 10.5 17.6 6H6.4zM20 8.2l-7.4 5.6a1 1 0 01-1.2 0L4 8.2V18h16V8.2z"/></svg>
+            <span>info@redlinegarage.com.ar</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>
+            <span>Parque Industrial, San Martín, Mendoza, Argentina</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5v5.4l4 2.4-.75 1.3L11 13V7h2z"/></svg>
+            <span>Lun a Vie 9:00–19:00 · Sáb 9:00–13:00</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="logo-mark"><span>R</span></span>
+      <span class="logo-text">REDLINE<em>GARAGE</em></span>
+      <p>Taller especializado en tuning y preparación de vehículos JDM.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Navegación</h4>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+
+    <div class="footer-social">
+      <h4>Seguinos</h4>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c2.7 0 3 0 4.1.06 1.1.05 1.8.22 2.5.47.7.27 1.2.6 1.8 1.15.5.55.9 1.1 1.15 1.8.25.7.42 1.4.47 2.5.06 1.1.06 1.4.06 4.1s0 3-.06 4.1c-.05 1.1-.22 1.8-.47 2.5a5 5 0 01-1.15 1.8 5 5 0 01-1.8 1.15c-.7.25-1.4.42-2.5.47-1.1.06-1.4.06-4.1.06s-3 0-4.1-.06c-1.1-.05-1.8-.22-2.5-.47a5 5 0 01-1.8-1.15 5 5 0 01-1.15-1.8c-.25-.7-.42-1.4-.47-2.5C2 15 2 14.7 2 12s0-3 .06-4.1c.05-1.1.22-1.8.47-2.5.27-.7.6-1.2 1.15-1.8.55-.5 1.1-.9 1.8-1.15.7-.25 1.4-.42 2.5-.47C9 2 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2A3.2 3.2 0 1112 8.8a3.2 3.2 0 010 6.4zm5.4-8.4a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4z"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.25-1.5 1.6-1.5H17V3.3A20 20 0 0014.6 3c-2.4 0-4 1.5-4 4.1v2.7H8v3.2h2.6v8h2.9z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M21.6 7.2a2.6 2.6 0 00-1.85-1.85C18.1 5 12 5 12 5s-6.1 0-7.75.35A2.6 2.6 0 002.4 7.2 27 27 0 002 12a27 27 0 00.4 4.8 2.6 2.6 0 001.85 1.85C5.9 19 12 19 12 19s6.1 0 7.75-.35a2.6 2.6 0 001.85-1.85A27 27 0 0022 12a27 27 0 00-.4-4.8zM10 15.5v-7l6 3.5-6 3.5z"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 3h2.3a5 5 0 003.7 3.9v2.4a7.3 7.3 0 01-3.7-1v6.4a5.7 5.7 0 11-5.7-5.7c.2 0 .4 0 .6.02v2.4a3.3 3.3 0 103.3 3.3V3z"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Redline Garage. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Botón volver arriba -->
+<button id="backToTop" class="back-to-top" aria-label="Volver al inicio">
+  <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 5l-7 7h4v7h6v-7h4z"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
